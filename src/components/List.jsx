@@ -21,19 +21,15 @@ const List = ({
     <div className="sideBar">
       {/* Selected places details */}
       {showPlace && isMobileView && (
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            overflowY: "hidden",
-            backgroundColor: "#fff",
-            width: "350px",
-          }}
-        >
+        <div className="sideBar_show_place">
           <span
             class="material-symbols-outlined"
             id="close_button"
             onClick={handleCloseModal}
+            style={{
+              top: "75px",
+              right: "50px",
+            }}
           >
             close
           </span>
